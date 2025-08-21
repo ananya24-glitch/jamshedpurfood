@@ -300,6 +300,8 @@ ul a:hover {
     nav ul {
         flex-direction: column;
         gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     nav.show-menu ul {
