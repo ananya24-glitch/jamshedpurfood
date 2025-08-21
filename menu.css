@@ -293,145 +293,161 @@ ul a:hover {
 
 
 
-/* ========== Small Devices (Phones) ========== */
-@media screen and (max-width: 480px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
+/* ===== Base styles for desktop ===== */
 
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .login button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-  }
-
-  .content, .content2, .content3, .content4, .content5, .content6 {
-    flex-direction: column;
-    padding: 1rem;
-    align-items: center;
-  }
-
-  .content img {
-    width: 100%;
-    height: auto;
+body {
     margin: 0;
-  }
-
-  .para {
-    margin-top: 2rem;
-    text-align: center;
-  }
-
-  .menu-con, .menu-con1 {
-    width: 90%;
-  }
-
-  .icons2, .icons3 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .details {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .reser-img {
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .reser-img img {
-    width: 100%;
-  }
-
-  .form-group input,
-  .form-group button {
-    width: 90%;
-  }
-
-  .content7 {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .cont a {
-    display: block;
-    margin-bottom: 10px;
-  }
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-/* ========== Medium Devices (Tablets) ========== */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .login {
-    margin-top: 10px;
-  }
-
-  .content img {
-    width: 60%;
-    height: auto;
-  }
-
-  .menu-con, .menu-con1 {
-    width: 45%;
-  }
-
-  .details {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .reser-img {
-    margin: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .reser-img img {
-    width: 80%;
-    height: auto;
-  }
-
-  .content7 {
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-
-  .form-group input,
-  .form-group button {
-    width: 90%;
-  }
-}
-
-/* ========== Large Devices (Desktops) ========== */
-@media screen and (min-width: 1025px) {
-  .menu-wrapper {
+/* Container styling */
+.container-nav nav {
+    display: flex;
     justify-content: space-between;
-  }
+    align-items: center;
+    padding: 20px;
+    background-color: #050505;
+    flex-wrap: wrap;
+}
 
-  .menu-con {
-    width: 23%;
-  }
+.logo h1 {
+    margin: 0;
+}
 
-  .menu-con1 {
-    width: 23%;
-  }
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-  .reser-img {
-    margin-left: 100px;
-  }
+nav ul a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.login button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.menu-0 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.con-menu {
+    flex: 1 1 250px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.icons-1 i {
+    color: gold;
+}
+
+.content3, .content4, .feedback, .content7, .cont {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Testimonials */
+.feedback {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-con1 {
+    max-width: 300px;
+    flex: 1 1 250px;
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Footer sections */
+.content7 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo7 {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+/* ===== Responsive styles ===== */
+
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        display: none; /* hide menu for toggle on small screens */
+    }
+
+    nav.show-menu ul {
+        display: flex;
+    }
+
+    .menu-0,
+    .feedback,
+    .content7 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .con-menu,
+    .menu-con1,
+    .logo7 {
+        max-width: 90%;
+    }
+
+    .container-nav nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .about1 h1, .about1 h2,
+    .logo3 h1, .logo3 h3,
+    .logo4 h1, .logo4 h3 {
+        text-align: center;
+    }
+
+    nav ul a {
+        font-size: 16px;
+    }
+
+    .login button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content7 {
+        padding: 10px;
+    }
+
+    .cont a {
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+    }
 }
