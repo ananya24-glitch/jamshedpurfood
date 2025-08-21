@@ -293,101 +293,6 @@ ul a:hover {
 
 
 
-/* ===== Base styles for desktop ===== */
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Container styling */
-.container-nav nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #050505;
-    flex-wrap: wrap;
-}
-
-.logo h1 {
-    margin: 0;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-}
-
-.login button {
-    padding: 8px 16px;
-    cursor: pointer;
-}
-
-.menu-0 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.con-menu {
-    flex: 1 1 250px;
-    max-width: 300px;
-    border: 1px solid #ddd;
-    padding: 15px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.icons-1 i {
-    color: gold;
-}
-
-.content3, .content4, .feedback, .content7, .cont {
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Testimonials */
-.feedback {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.menu-con1 {
-    max-width: 300px;
-    flex: 1 1 250px;
-    border: 1px solid #eee;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Footer sections */
-.content7 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.logo7 {
-    flex: 1 1 200px;
-    margin: 10px;
-}
 
 /* ===== Responsive styles ===== */
 
@@ -395,7 +300,6 @@ nav ul a {
     nav ul {
         flex-direction: column;
         gap: 10px;
-        display: none; /* hide menu for toggle on small screens */
     }
 
     nav.show-menu ul {
