@@ -631,3 +631,11 @@ ul a:hover {
     margin-left: 100px;
   }
 }
+
+@media (max-width: 992px) {
+.feedback
+{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
