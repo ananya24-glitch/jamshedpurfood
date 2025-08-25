@@ -97,6 +97,179 @@
         </div>
 
     </div>
+    <style>
+        /* ============================= */
+/*   Responsive Media Queries    */
+/* ============================= */
+
+/* For tablets (max-width: 992px) */
+@media screen and (max-width: 992px) {
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content .para {
+        margin-top: 1rem;
+    }
+
+    .menu-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reser-img {
+        margin-top: 2rem;
+    }
+}
+
+/* For mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .login {
+        margin-top: 1rem;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .content img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .para h1 {
+        font-size: 1.5rem;
+    }
+
+    .para p {
+        font-size: 0.9rem;
+    }
+
+    .dish {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .content2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .content2 img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .para2 {
+        padding: 0;
+    }
+
+    .para2 h1 {
+        font-size: 1.2rem;
+    }
+
+    .para2 button {
+        width: 100%;
+    }
+
+    .content3 .icons2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .feedback {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .content5 .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content7 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .content7 .logo7 {
+        margin-bottom: 1rem;
+    }
+}
+
+/* For very small mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .para h1 {
+        font-size: 1.2rem;
+    }
+
+    .content img {
+        width: 100%;
+    }
+
+    .menu-con p {
+        font-size: 0.8rem;
+    }
+
+    .details input,
+    .details button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .content3 .icons2 {
+        grid-template-columns: 1fr;
+    }
+
+    .logo7 button {
+        width: 100%;
+    }
+
+    .cont {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+    </style>
     <div class="dish">
         <div class="logo1">
             <h3>Popular Dishes</h3>
